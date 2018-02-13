@@ -36,5 +36,32 @@
       "shortInf": "Free Lifetime Support & Updates",
       "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
     }
+  ],
+
+  "facts": [
+    {
+      "number": "218",
+      "iconClass": "icon_box-checked",
+      "description": "completed projects",
+      "addition": ""
+    },
+    {
+      "number": "360",
+      "iconClass": "icon_hourglass",
+      "description": "hours of work",
+      "addition": " / month"
+    },
+    {
+      "number": "135",
+      "iconClass": "icon_tags",
+      "description": "solved tickets",
+      "addition": ""
+    },
+    {
+      "number": "174",
+      "iconClass": "icon_like_alt",
+      "description": "satisfied clients",
+      "addition": ""
+    }
   ]
 }
