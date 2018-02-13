@@ -1,11 +1,15 @@
 section.facts
     .container
-        .title
-            span.romb-left
-            h2.title-text company &#160;
-                span.accent-color facts
-            span.romb-right
-        .text We do love to work and increase our counter numbers, this is what we’ve done till now
+        .section-icon
+            .box
+                .icon.icon_toolbox
+        .section-title
+            .title
+                span.romb-left
+                h2.title-text company &#160;
+                    span.accent-color facts
+                span.romb-right
+            .text We do love to work and increase our counter numbers, this is what we’ve done till now
         .list__facts
             each fact in facts
                 .fact__item
@@ -16,4 +20,4 @@ section.facts
                     span.icon-wrapper
                         .icon.accent-color(class=fact.iconClass)
                     .description=fact.description
-                        span.addition=fact.addition
+                        span.addition

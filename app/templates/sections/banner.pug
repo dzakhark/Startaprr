@@ -1,6 +1,6 @@
 section.banner
     .container
-        .banner__about
+        .section-title
             .title
                 span.romb-left
                 h2.title-text amazing &#160;
@@ -8,25 +8,9 @@ section.banner
                 span.romb-right
             .text With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !
         .list__preview
-            .item
-                .icon.icon_desktop.accent-color
-                .description
-                    .name-service.
-                        responsive & multipurpose
-                    .text.
-                        Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
-            .item
-                .icon.icon_puzzle_alt.accent-color
-                .description
-                    .name-service.
-                        easy customization
-                    .text.
-                        Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
-            .item
-                .icon.icon_star.accent-color
-                .description
-                    .name-service.
-                        unlimited features
-                    .text.
-                        Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
-
+            each item in bannerList
+                .item
+                    .icon.accent-color(class=item.iconClass)
+                    .description
+                        .name-service=item.name
+                        .text=item.text

@@ -1,4 +1,21 @@
 {
+  "bannerList": [
+    {
+      "iconClass": "icon_desktop",
+      "name": "responsive & multipurpose",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, nunc vestibulum."
+    },
+    {
+      "iconClass": "icon_puzzle_alt",
+      "name": "responsive & multipurpose",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, nunc vestibulum."
+    },
+    {
+      "iconClass": "icon_star",
+      "name": "responsive & multipurpose",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, nunc vestibulum."
+    }
+  ],
   "services": [
     {
       "iconClass": "icon_desktop",
