@@ -1,0 +1,8 @@
+header.header
+    - var items = ["Home", "Portfolio", "Blog", "Pages", "Features", "Mega menu", "Contact"]
+    .container
+        div.logo
+        nav.nav
+            each item in items
+                a.nav__link(href="#")=item
+            a.icon.icon_search

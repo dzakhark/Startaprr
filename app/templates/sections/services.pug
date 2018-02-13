@@ -1,0 +1,13 @@
+section.services
+    .container
+        .list__services
+            each service in services
+                .item
+                    .label
+                        .icon(class=service.iconClass)
+                        .top-section
+                        .bottom-section
+                    .description
+                        .name=service.name
+                        .short-inf=service.shortInf
+                        .text=service.text

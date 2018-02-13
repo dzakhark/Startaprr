@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "iconClass": "icon_desktop",
+      "name": "responsive & multipurpose",
+      "shortInf": "Desktops, Tablets & Phones",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    },
+    {
+      "iconClass": "icon_puzzle_alt",
+      "name": "easy customization",
+      "shortInf": "One Click Demo Content Installation",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    },
+    {
+      "iconClass": "icon_star",
+      "name": "unlimited features",
+      "shortInf": "Shortcodes, Typography & Different Layouts",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    },
+    {
+      "iconClass": "icon_menu-square_alt",
+      "name": "clean & modular coding",
+      "shortInf": "100% Clean, Valid & Well-Commented Coding",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    },
+    {
+      "iconClass": "icon_cart",
+      "name": "the best e-commerce solutions",
+      "shortInf": "WooCommerce Fully Integration",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    },
+    {
+      "iconClass": " icon_lifesaver",
+      "name": "awesome friendly support",
+      "shortInf": "Free Lifetime Support & Updates",
+      "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }
+  ]
+}
