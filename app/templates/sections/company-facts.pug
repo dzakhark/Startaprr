@@ -20,4 +20,5 @@ section.facts
                     span.icon-wrapper
                         .icon.accent-color(class=fact.iconClass)
                     .description=fact.description
-                        span.addition
+                        if fact.addition
+                            span.addition=fact.addition

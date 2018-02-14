@@ -1,0 +1,29 @@
+.contact
+  background-color: $accent
+  .container
+    padding: 28px 0
+    display: flex
+    justify-content: space-between
+    text-transform: uppercase
+    .question
+      font-weight: 600
+      color: $light-text
+    .btn
+      padding: 16px
+      background-color: $light-text
+      color: $title-text
+      font-size: 13px
+      font-weight: 800
+      border-radius: 5px
+      margin-right: 10px
+      cursor: pointer
+      white-space: nowrap
+      transition: all .3s ease
+      &:last-child
+        margin-right: 0
+      &:active
+        background-color: darken($title-text, 10%)
+        color: darken($light-text, 5%)
+      &:hover, &:focus
+        background-color: $title-text
+        color: $light-text
