@@ -1,5 +1,6 @@
 @import "share/fonts"
 @import "share/vars"
+@import "_mixins/share"
 
 *
 	-webkit-box-sizing: border-box
@@ -81,15 +82,17 @@ a
 	display: flex
 	align-items: center
 	justify-content: center
+	color: $light-text
 	.title-text
 		font-size: 26px
-		font-weight: 600
+		font-weight: 800
 		text-transform: uppercase
-		color: $light-text
+	.title-dark
+		color: #383838
 	.romb-left, .romb-right
 		min-width: 28px
 		height: 15px
-		margin-right: 20px
+		margin: 0 20px 0 10px
 		background-image: url("../img/rombs.png")
 		background-color: transparent
 		background-size: contain
@@ -97,8 +100,7 @@ a
 		background-position: center
 	.romb-right
 		transform: rotate(180deg)
-		margin-right: 0
-		margin-left: 20px
+		margin: 0 10px 0 20px
 
 
 
@@ -107,6 +109,7 @@ a
 @import "sections/services"
 @import "sections/facts"
 @import "sections/contact"
+@import "sections/team"
 
 @import "share/media"
 // Всегда в конце

@@ -80,5 +80,119 @@
       "description": "satisfied clients",
       "addition": ""
     }
+  ],
+  "teamList": [
+    {
+      "photo": "",
+      "name": "alexis simpson",
+      "social": [
+        {
+          "icon": "social_facebook",
+          "link": "https://www.facebook.com"
+        },
+        {
+          "icon": "social_twitter",
+          "link": "https://twitter.com"
+        },
+        {
+          "icon": "social_vimeo",
+          "link": "https://vimeo.com/"
+        },
+        {
+          "icon": "social_googleplus",
+          "link" :"https://plus.google.com"
+        },
+        {
+          "icon": "social_dribbble",
+          "link": "https://dribbble.com"
+        }
+      ],
+      "position": "CEO & Developer",
+      "email": "a.simpson@unique.com",
+      "phone": "+1 911 (77) 222-1111"
+    },
+    {
+      "photo": "",
+      "name": "steven cole",
+      "social": [
+        {
+          "icon": "social_facebook",
+          "link": "https://www.facebook.com"
+        },
+        {
+          "icon": "social_twitter",
+          "link": "https://twitter.com"
+        },
+        {
+          "icon": "social_vimeo",
+          "link": "https://vimeo.com/"
+        },
+        {
+          "icon": "social_googleplus",
+          "link" :"https://plus.google.com"
+        },
+        {
+          "icon": "social_dribbble",
+          "link": "https://dribbble.com"
+        }
+      ],
+      "position": "User Interface Designer",
+      "email": "s.cole@unique.com",
+      "phone": "+1 911 (77) 222-1111"
+    },
+    {
+      "photo": "",
+      "name": "Frank piener",
+      "social": [
+        {
+          "icon": "social_facebook",
+          "link": "https://www.facebook.com"
+        },
+        {
+          "icon": "social_twitter",
+          "link": "https://twitter.com"
+        },
+        {
+          "icon": "social_vimeo",
+          "link": "https://vimeo.com/"
+        },
+        {
+          "icon": "social_googleplus",
+          "link" :"https://plus.google.com"
+        },
+        {
+          "icon": "social_dribbble",
+          "link": "https://dribbble.com"
+        }
+      ],
+      "position": "Sales Manager",
+      "email": "f.piener@unique.com",
+      "phone": "+1 911 (77) 222-1111"
+    },
+    {
+      "photo": "",
+      "name": "ashley lennon",
+      "social": [
+        {
+          "icon": "social_facebook",
+          "link": "https://www.facebook.com"
+        },
+        {
+          "icon": "social_twitter",
+          "link": "https://twitter.com"
+        },
+        {
+          "icon": "social_vimeo",
+          "link": "https://vimeo.com/"
+        },
+        {
+          "icon": "social_googleplus",
+          "link" :"https://plus.google.com"
+        }
+      ],
+      "position": "IT Specialist",
+      "email": "a.lennon@unique.com",
+      "phone": "+1 911 (77) 222-1111"
+    }
   ]
 }

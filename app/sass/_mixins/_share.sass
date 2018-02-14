@@ -1,0 +1,8 @@
+@mixin icon-before-text($code)
+  &::before
+    content: '#{$code}'
+    display: inline-block
+    font-family: $icon-font
+    font-size: 15px
+    margin-right: 18px
+    transition: color .2s ease
