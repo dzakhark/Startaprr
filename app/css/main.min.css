@@ -41,6 +41,20 @@
   src: url("../fonts/ElegantFonts/ElegantIcons.eot");
   src: url("../fonts/ElegantFonts/ElegantIcons.eot?#iefix") format("embedded-opentype"), url("../fonts/ElegantFonts/ElegantIcons.woff") format("woff"), url("../fonts/ElegantFonts/ElegantIcons.ttf") format("truetype"); }
 
+.btn-slider {
+  padding: 7px;
+  background-color: #383838;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer; }
+  .btn-slider .icon {
+    font-size: 25px; }
+  .btn-slider:hover {
+    background-color: #00a99d; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -522,19 +536,19 @@ a {
         border-image-slice: 1; }
     .team .title .text {
       color: #8a8a8a; }
-  .team .btn-slider {
-    padding: 7px;
-    background-color: #383838;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-    cursor: pointer; }
-    .team .btn-slider .icon {
-      font-size: 25px; }
-    .team .btn-slider:hover {
-      background-color: #00a99d; }
+    .team .title .btn-slider {
+      padding: 7px;
+      background-color: #383838;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      cursor: pointer; }
+      .team .title .btn-slider .icon {
+        font-size: 25px; }
+      .team .title .btn-slider:hover {
+        background-color: #00a99d; }
   .team .team__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -679,6 +693,66 @@ a {
     display: block; }
   .team .active .information .name {
     background-color: #383838; }
+
+.clients {
+  background-color: #383838; }
+  .clients .container {
+    max-width: 1290px;
+    padding: 50px 0; }
+  .clients .slider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .clients .slider .btn-slider {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      background-color: #e4e4e4; }
+      .clients .slider .btn-slider .icon {
+        color: #00a99d; }
+      .clients .slider .btn-slider:hover {
+        background-color: #00a99d; }
+        .clients .slider .btn-slider:hover .icon {
+          color: #e4e4e4; }
+  .clients .list__clients {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%; }
+  .clients .client {
+    width: -webkit-calc(25% - 20px);
+    width: calc(25% - 20px);
+    height: 160px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #333333;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    cursor: pointer;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease; }
+    .clients .client:hover {
+      opacity: 1; }
+  .clients .logo1 {
+    background-image: url("../../img/logo1.png"); }
+  .clients .logo2 {
+    background-image: url("../../img/logo2.png"); }
+  .clients .logo3 {
+    background-image: url("../../img/logo3.png"); }
+  .clients .logo4 {
+    background-image: url("../../img/logo4.png"); }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

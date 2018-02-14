@@ -194,5 +194,23 @@
       "email": "a.lennon@unique.com",
       "phone": "+1 911 (77) 222-1111"
     }
+  ],
+  "clientsList": [
+    {
+      "logo": "logo1",
+      "link": "#"
+    },
+    {
+      "logo": "logo2",
+      "link": "#"
+    },
+    {
+      "logo": "logo3",
+      "link": "#"
+    },
+    {
+      "logo": "logo4",
+      "link": "#"
+    }
   ]
 }
