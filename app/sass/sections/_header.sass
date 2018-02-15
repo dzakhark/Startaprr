@@ -1,6 +1,5 @@
 .header
   padding: 30px 0
-  //background-color: #f9f9f9
   border-bottom: 2px solid #dedede
   .container
     display: flex
@@ -16,7 +15,6 @@
     background-color: $body-color
   .nav
     display: flex
-    flex-wrap: wrap
     &__link
       font-size: 14px
       padding: 15px
@@ -40,3 +38,17 @@
       &:hover
         transition: all .2s ease
         color: darken($accent, 10%)
+    &.active-nav
+      position: absolute
+      background-color: $body-color
+      width: 100%
+      z-index: 100
+      top: 112px
+      left: 0
+      .nav__link
+        display: block
+        margin: 0 auto
+  .hamburger
+    display: none
+    padding: 0
+    outline: none

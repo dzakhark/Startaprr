@@ -1,7 +1,7 @@
 .team
   background-color: #f9f9f9
   .container
-    padding: 25px 0 100px
+    padding: 25px 15px 100px
   .title
     justify-content: space-between
     .lines
@@ -19,21 +19,13 @@
         border-image-slice: 1
     .text
       color: #8a8a8a
-    .btn-slider
-      padding: 7px
-      background-color: #383838
-      border-radius: 5px
-      transition: all .3s ease
-      cursor: pointer
-      .icon
-        font-size: 25px
-      &:hover
-        background-color: $accent
 
   .team__list
-    display: flex
-    justify-content: space-between
     overflow: hidden
+    margin: 0 -15px
+    white-space: nowrap
+    display: flex
+    justify-content: space-around
 
   .social__list
     display: none
@@ -63,9 +55,9 @@
           color: $light-text
 
   .team__item
-    max-width: 270px
-    min-width: 200px
-    flex-grow: 1
+    min-width: 270px
+    display: inline-block
+    margin: 0 15px
     .photo
       display: flex
       align-items: center
@@ -75,6 +67,7 @@
       background-color: #8a8a8a
       border-top-right-radius: 5px
       border-top-left-radius: 5px
+      transition: all .2s ease
     .information
       border-top: none
       border: 1px solid #dedede
@@ -96,6 +89,7 @@
         border-radius: 5px
         position: absolute
         top: -27px
+        transition: all .2s ease
       .position
         margin-top: 35px
         color: #606060
@@ -115,10 +109,10 @@
         &:hover
           &::before
             color: #aaaaaa
-  & .active
-    .photo
-      background-color: $accent
-    .social__list
-      display: block
-    .information .name
-      background-color: #383838
+    &:hover, &.active
+      .photo
+        background-color: $accent
+      .social__list
+        display: block
+      .information .name
+        background-color: #383838

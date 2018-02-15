@@ -1,7 +1,6 @@
 @import "share/fonts"
 @import "share/vars"
 @import "_mixins/share"
-@import "share/btn-slider"
 
 *
 	-webkit-box-sizing: border-box
@@ -31,6 +30,7 @@
 *
 	margin: 0
 	padding: 0
+	box-sizing: border-box
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -63,8 +63,9 @@ a
 	height: auto
 
 .container
-	max-width: 1170px
+	max-width: 1200px
 	margin: 0 auto
+	padding: 0 15px
 
 .icon
 	font-family: $icon-font
@@ -103,6 +104,16 @@ a
 		transform: rotate(180deg)
 		margin: 0 10px 0 20px
 
+.btn-slider
+	padding: 7px
+	background-color: #383838
+	border-radius: 5px
+	transition: all .3s ease
+	cursor: pointer
+	.icon
+		font-size: 25px
+	&:hover
+		background-color: $accent
 
 
 @import "sections/header"

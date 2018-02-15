@@ -1,76 +1,77 @@
 .services
   .container
     padding: 20px 0 85px
-    .list__services
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-around
+  .list__services
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
 
-    .item
-      max-width: 365px
-      display: flex
-      font-size: 14px
-      margin-top: 60px
-      .label
-        position: relative
+  .item
+    width: 360px
+    display: flex
+    font-size: 14px
+    margin: 60px 15px 0
+    .label
+      position: relative
+      width: 40px
+      margin-right: 20px
+      margin-top: 5px
+      height: 72px
+      .icon
+        position: absolute
+        top: 15px
+        left: 50%
+        margin-left: -10px
+        z-index: 15
+        font-size: 20px
+        color: $light-text
+      .top-section, .bottom-section
         width: 40px
-        margin-right: 20px
-        margin-top: 5px
-        .icon
-          position: absolute
-          top: 15px
-          left: 50%
-          margin-left: -10px
-          z-index: 15
-          font-size: 20px
-          color: $light-text
-        .top-section, .bottom-section
-          width: 40px
-          height: 37px
-          background-color: $dark-label
-          border-top-left-radius: 5px
-          border-top-right-radius: 5px
+        height: 37px
+        background-color: $dark-label
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        z-index: 10
+        transition: all .2s ease
+        &::after
+          content: ''
+          display: block
+          width: 0
+          height: 0
+          position: relative
           z-index: 10
+          top: 37px
+          border-left: 20px solid transparent
+          border-right: 20px solid transparent
+          border-top: 15px solid $dark-label
           transition: all .2s ease
-          &::after
-            content: ''
-            display: block
-            width: 0
-            height: 0
-            position: relative
-            z-index: 10
-            top: 37px
-            border-left: 20px solid transparent
-            border-right: 20px solid transparent
-            border-top: 15px solid $dark-label
-            transition: all .2s ease
-        .bottom-section
-          background-color: $accent
-          position: absolute
+      .bottom-section
+        background-color: $accent
+        position: absolute
+        z-index: -1
+        top: 22px
+        &::after
+          border-top-color: $accent
           z-index: -1
-          top: 22px
+      &:hover
+        .top-section
+          background-color: $accent
           &::after
             border-top-color: $accent
-            z-index: -1
-        &:hover
-          .top-section
-            background-color: $accent
-            &::after
-              border-top-color: $accent
-          .bottom-section
-            background-color: $dark-label
-            &::after
-              border-top-color: $dark-label
-      .name
-        text-transform: uppercase
-        white-space: nowrap
-        font-weight: 800
-        color: #606060
+        .bottom-section
+          background-color: $dark-label
+          &::after
+            border-top-color: $dark-label
+    .name
+      text-transform: uppercase
+      white-space: nowrap
+      font-weight: 800
+      color: #606060
         
-      .short-inf
-        font-size: 12px
-        color: #aaaaaa
-        text-transform: capitalize
+    .short-inf
+      font-size: 12px
+      color: #aaaaaa
+      text-transform: capitalize
 
-      .text
-        margin-top: 20px
+    .text
+      margin-top: 20px

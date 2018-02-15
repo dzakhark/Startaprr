@@ -4,21 +4,95 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-    /**/
+
+  //.team
+  //  .team__list
+  //    margin: 0 -5%
+  //  .team__item
+  //    margin: 0 5%
+
+  .clients .client
+    min-width: 230px
+    height: 150px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .header
+    flex-wrap: wrap
+    justify-content: space-between
+    .nav
+      display: none
+      position: absolute
+      background-color: $body-color
+      width: 100%
+      z-index: 100
+      top: 112px
+      left: 0
+      padding: 10px
+      .nav__link
+        display: block
+        margin: 0 auto
+        padding-left: 20px
+      .icon
+        display: inline-block
+        margin-left: 10px
+    .hamburger
+      display: block
+
+  .banner
+    background-position: calc(50% + 150px) bottom
+
+  .facts .fact__item
+    padding-top: 20px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .banner
+    background-position: calc(50% + 200px) bottom
+  .contact
+    .container
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+      padding-bottom: 50px
+      .question
+        margin-right: 0
+        padding-bottom: 30px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .banner
+    background-position: calc(50% + 250px) bottom
+  .title-text
+    font-size: 22px
+
+  .contact .buttons .btn
+    display: block
+    width: 100%
+    &:last-child
+      margin-top: 25px
+
+  .team .section-title
+    .lines
+      display: none
+    .text
+      margin-top: 15px
+
+  .btn-slider
+    padding: 3px
+    .icon
+      font-size: 18px
+
+  .clients .client
+    min-width: 210px
+    height: 130px
+
+
+
+
 
 
 /* Custom, iPhone Retina */

@@ -13,10 +13,10 @@ section.team
                 .btn-slider
                     .icon.arrow_triangle-right
             .text We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests
-        .team__list
+        ul.team__list
             each member, index in teamList
                 if index === 1
-                    .team__item.active
+                    li.team__item.active
                         .photo
                             .social__list
                                 each item, index in member.social

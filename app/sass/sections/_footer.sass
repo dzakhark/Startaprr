@@ -5,7 +5,6 @@
     text-align: center
     padding-bottom: 25px
   .section-icon
-
     .box
       display: inline-block
       margin: 0 auto
@@ -18,10 +17,13 @@
       position: relative
       top: -19px
       cursor: pointer
+      transition: background-color .2s ease
       .icon
         line-height: 35px
         transform: rotate(-45deg)
         font-size: 20px
-        position: relative
-        top: 2px
-        right: 1px
+        position: absolute
+        top: 3px
+        right: 10px
+    .top:hover
+      background-color: darken($accent, 10%)
