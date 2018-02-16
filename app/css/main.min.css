@@ -788,7 +788,6 @@ a {
     .footer .section-icon .top:hover {
       background-color: #00766e; }
 
-/*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .clients .client {
