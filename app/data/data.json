@@ -1,4 +1,5 @@
 {
+  "navLinks": ["Home", "Portfolio", "Blog", "Pages", "Features", "Mega menu", "Contact"],
   "bannerList": [
     {
       "iconClass": "icon_desktop",
@@ -16,7 +17,7 @@
       "text": "Proin in magna a ipsum viverra scelerisque eu nec turp, nunc vestibulum."
     }
   ],
-  "services": [
+  "serviceList": [
     {
       "iconClass": "icon_desktop",
       "name": "responsive & multipurpose",
@@ -55,7 +56,7 @@
     }
   ],
 
-  "facts": [
+  "factList": [
     {
       "number": "218",
       "iconClass": "icon_box-checked",
@@ -195,7 +196,7 @@
       "phone": "+1 911 (77) 222-1111"
     }
   ],
-  "clientsList": [
+  "clientList": [
     {
       "logo": "logo1",
       "link": "#"

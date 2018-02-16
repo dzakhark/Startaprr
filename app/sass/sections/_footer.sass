@@ -1,29 +1,16 @@
 .footer
-  background-color: #333333
+  background-color: $footer
   color: #d3d3d3
   .container
     text-align: center
     padding-bottom: 25px
   .section-icon
-    .box
-      display: inline-block
-      margin: 0 auto
-      width: 40px
-      height: 40px
-      background-color: $accent
-      border-radius: 5px
-      transform: rotate(45deg)
-      transform-origin: center
-      position: relative
-      top: -19px
+    .top
       cursor: pointer
       transition: background-color .2s ease
       .icon
-        line-height: 35px
-        transform: rotate(-45deg)
-        font-size: 20px
         position: absolute
         top: 3px
         right: 10px
-    .top:hover
-      background-color: darken($accent, 10%)
+      &:hover
+        background-color: darken($accent, 10%)

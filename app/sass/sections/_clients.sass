@@ -1,5 +1,5 @@
 .clients
-  background-color: #383838
+  background-color: $body-dark
   .container
     max-width: 1320px
     padding-top: 50px
@@ -8,17 +8,16 @@
     display: flex
     justify-content: space-between
 
-    .btn-slider
+    .sliderBtn
       align-self: center
-      background-color: #e4e4e4
+      background-color: $text-light
       .icon
-        font-size: 25px
         color: $accent
       &:hover
         background-color: $accent
         .icon
-          color: #e4e4e4
-  .list__clients
+          color: $text-light
+  .clientsList
     display: flex
     justify-content: space-around
     margin: 0 -15px
@@ -29,7 +28,7 @@
     margin: 0 15px
     height: 160px
     border-radius: 5px
-    background-color: #333333
+    background-color: $footer
     background-repeat: no-repeat
     background-position: center
     opacity: 0.4

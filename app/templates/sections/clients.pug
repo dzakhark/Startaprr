@@ -1,10 +1,8 @@
 section.clients
     .container
         .slider
-            .btn-slider
-                .icon.arrow_triangle-left
-            .list__clients
-                for client in clientsList
+            +slidebarBtn('arrow_triangle-left')
+            .clientsList
+                for client in clientList
                     a(href=client.link class=client.logo).client
-            .btn-slider
-                .icon.arrow_triangle-right
+            +slidebarBtn('arrow_triangle-right')

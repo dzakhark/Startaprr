@@ -1,17 +1,17 @@
 .services
   .container
     padding: 20px 0 85px
-  .list__services
+  .serviceList
     display: flex
     flex-wrap: wrap
     justify-content: space-around
 
-  .item
+  .serviceItem
     width: 360px
     display: flex
     font-size: 14px
     margin: 60px 15px 0
-    .label
+    &__label
       position: relative
       width: 40px
       margin-right: 20px
@@ -24,11 +24,11 @@
         margin-left: -10px
         z-index: 15
         font-size: 20px
-        color: $light-text
+        color: $text-light
       .top-section, .bottom-section
         width: 40px
         height: 37px
-        background-color: $dark-label
+        background-color: $label-dark
         border-top-left-radius: 5px
         border-top-right-radius: 5px
         z-index: 10
@@ -43,7 +43,7 @@
           top: 37px
           border-left: 20px solid transparent
           border-right: 20px solid transparent
-          border-top: 15px solid $dark-label
+          border-top: 15px solid $label-dark
           transition: all .2s ease
       .bottom-section
         background-color: $accent
@@ -59,18 +59,18 @@
           &::after
             border-top-color: $accent
         .bottom-section
-          background-color: $dark-label
+          background-color: $label-dark
           &::after
-            border-top-color: $dark-label
+            border-top-color: $label-dark
     .name
       text-transform: uppercase
       white-space: nowrap
       font-weight: 800
-      color: #606060
+      color: $text-dark
         
     .short-inf
       font-size: 12px
-      color: #aaaaaa
+      color: $text-transparent
       text-transform: capitalize
 
     .text

@@ -1,14 +1,12 @@
 @import "share/fonts"
 @import "share/vars"
-@import "_mixins/share"
+@import "_mixins/icon-before"
 
 *
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
+	margin: 0
+	padding: 0
 	box-sizing: border-box
 	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
 		box-sizing: border-box
 
 *::-webkit-input-placeholder
@@ -27,10 +25,6 @@
 	color: #666
 	opacity: 1
 
-*
-	margin: 0
-	padding: 0
-	box-sizing: border-box
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -51,7 +45,7 @@ body
 	font-weight: 500
 	overflow-x: hidden
 	opacity: 1
-	background-color: $body-color
+	background-color: $body-light
 	color: $text
 
 a
@@ -70,7 +64,7 @@ a
 .icon
 	font-family: $icon-font
 	font-size: 16px
-	color: $light-text
+	color: $text-light
 
 .accent-color
 	color: $accent
@@ -78,43 +72,66 @@ a
 .section-title
 	padding: 75px 0 40px
 	text-align: center
-	color: $title-text
+
+.title-dark
+	color: $body-dark
 
 .title
 	display: flex
 	align-items: center
 	justify-content: center
-	color: $light-text
-	.title-text
+	color: $text-light
+	&__text
 		font-size: 26px
 		font-weight: 800
 		text-transform: uppercase
-	.title-dark
-		color: #383838
-	.romb-left, .romb-right
+		white-space: nowrap
+	&__subtext
+		color: $text-dark
+	.romb
 		min-width: 28px
 		height: 15px
-		margin: 0 20px 0 10px
 		background-image: url("../img/rombs.png")
 		background-color: transparent
 		background-size: contain
 		background-repeat: no-repeat
 		background-position: center
-	.romb-right
-		transform: rotate(180deg)
-		margin: 0 10px 0 20px
+		&-right
+			transform: rotate(180deg)
+			margin: 0 10px 0 20px
+		&-left
+			margin: 0 20px 0 10px
 
-.btn-slider
+.sliderBtn
 	padding: 7px
-	background-color: #383838
+	background-color: $body-dark
 	border-radius: 5px
-	transition: all .3s ease
+	transition: all .2s ease
 	cursor: pointer
 	.icon
 		font-size: 25px
 	&:hover
 		background-color: $accent
 
+
+.section-icon
+	.box
+		display: inline-block
+		margin: 0 auto
+		width: 40px
+		height: 40px
+		background-color: $accent
+		border-radius: 5px
+		transform: rotate(45deg)
+		transform-origin: center
+		position: relative
+		top: -19px
+		.icon
+			line-height: 35px
+			transform: rotate(-45deg)
+			font-size: 20px
+			position: relative
+			right: 3px
 
 @import "sections/header"
 @import "sections/banner"

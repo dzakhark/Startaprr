@@ -5,16 +5,15 @@ $(function() {
         $('.nav').slideToggle(500);
     });
 
-    checkVisibleItem('.team__list', '.team__item');
-    checkVisibleItem('.list__clients', '.client');
+    checkVisibleItem('.membersTeamList', '.memberItem');
+    checkVisibleItem('.clientsList', '.client');
 
     $(window).resize(function() {
-        checkVisibleItem('.team__list', '.team__item');
-        checkVisibleItem('.list__clients', '.client');
+        checkVisibleItem('.membersTeamList', '.memberItem');
+        checkVisibleItem('.clientsList', '.client');
     });
 
     $('.top').click(function () {
-        console.log('top');
         $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
     });
 

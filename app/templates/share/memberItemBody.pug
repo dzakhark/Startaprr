@@ -1,0 +1,11 @@
+.memberItem__photo
+    .socialList
+        each item, index in member.social
+            .socialItem
+                a(href=item.link class=item.icon).icon
+.memberItem__information
+    .name=member.name
+    .position=member.position
+    .contacts
+        a.email=member.email
+        .telephone=member.phone

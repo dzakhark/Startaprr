@@ -1,0 +1,8 @@
+mixin iconSection(iconClass, btn, btnClass)
+    .section-icon
+        if btn
+            a(class=btnClass).box
+                span.icon(class=iconClass)
+        else
+            .box
+                .icon(class=iconClass)

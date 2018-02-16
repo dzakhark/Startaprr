@@ -25,7 +25,7 @@ gulp.task('templates', function () {
         .pipe(pug({
             pretty: true
         }))
-		.pipe(gulp.dest('app'))
+		.pipe(gulp.dest('app/html'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -91,23 +91,24 @@ gulp.task('watch', ['templates', 'sass', 'js', 'css-libs', 'browser-sync'], func
 });
 
 
-gulp.task('imagemin', function() {
-    return gulp.src('app/img**/*')
-        .pipe(cache(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            une: [pngquant()]
-        })))
-        .pipe(gulp.dest('dist/img'));
-});
+// gulp.task('imagemin', function() {
+//     return gulp.src(['!app/img/**/*.svg', 'app/img/**/*'])
+//         .pipe(cache(imagemin({
+//             interlaced: true,
+//             progressive: true,
+//             svgoPlugins: [{removeViewBox: false}],
+//             une: [pngquant()]
+//         })))
+//         .pipe(gulp.dest('dist/img'));
+// });
 
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
-	let buildFiles = gulp.src([
-		'app/*.html'
-		]).pipe(gulp.dest('dist'));
+gulp.task('build', ['removedist', 'templates', 'css-libs', 'sass', 'js'], function() {
+
+	let buildFiles = gulp.src(
+		'app/html/**/*.html'
+		).pipe(gulp.dest('dist'));
 
 	let buildCss = gulp.src([
 		'app/css/main.min.css',
@@ -122,7 +123,6 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 	let buildFonts = gulp.src([
 		'app/fonts/**/*'
 		]).pipe(gulp.dest('dist/fonts'));
-
 });
 
 

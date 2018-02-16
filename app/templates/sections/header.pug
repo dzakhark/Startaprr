@@ -1,12 +1,11 @@
 header.header
-    - var items = ["Home", "Portfolio", "Blog", "Pages", "Features", "Mega menu", "Contact"]
     .container
         a(href="#").logo
-        button(class="hamburger hamburger--spring" type="button")
-            span(class="hamburger-box")
-                span(class="hamburger-inner")
+        button(type="button").hamburger.hamburger--spring
+            span.hamburger-box
+                span.hamburger-inner
         nav.nav
-            each item in items
+            each item in navLinks
                 a.nav__link(href="#")=item
             a.icon.icon_search
 
