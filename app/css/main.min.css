@@ -825,7 +825,7 @@ a {
   .banner {
     background-position: -webkit-calc(50% + 150px) bottom;
     background-position: calc(50% + 150px) bottom; }
-  .facts .fact__item {
+  .facts .factItem {
     padding-top: 20px; } }
 
 /* Small Devices, Tablets */
