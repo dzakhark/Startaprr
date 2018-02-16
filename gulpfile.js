@@ -18,7 +18,7 @@ const gulp = require('gulp'),
 
 
 gulp.task('templates', function () {
-    return gulp.src('app/templates/*.pug')
+    return gulp.src(['app/templates/*.pug'])
         .pipe(data(function(file) {
             return JSON.parse(fs.readFileSync('./app/data/data.json'))
         }))
@@ -104,11 +104,11 @@ gulp.task('watch', ['templates', 'sass', 'js', 'css-libs', 'browser-sync'], func
 
 
 
-gulp.task('build', ['removedist', 'templates', 'css-libs', 'sass', 'js'], function() {
+gulp.task('build', [ 'templates', 'css-libs', 'sass', 'js'], function() {
 
 	let buildFiles = gulp.src(
 		'app/html/**/*.html'
-		).pipe(gulp.dest('dist'));
+		).pipe(gulp.dest('./dist'));
 
 	let buildCss = gulp.src([
 		'app/css/main.min.css',

@@ -662,13 +662,13 @@ a {
         color: #e4e4e4;
         -webkit-border-radius: 5px;
                 border-radius: 5px;
-        position: absolute;
+        position: relative;
         top: -27px;
         -webkit-transition: all .2s ease;
         -o-transition: all .2s ease;
         transition: all .2s ease; }
       .team .memberItem__information .position {
-        margin-top: 35px;
+        margin-top: -15px;
         color: #606060;
         padding-bottom: 18px;
         margin-bottom: 16px;
